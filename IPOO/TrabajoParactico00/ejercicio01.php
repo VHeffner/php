@@ -1,8 +1,20 @@
 <?php
-echo "Ingrese el numero que desee pasar a factorial: ";
+
+/** Programa principal
+ * 
+ */
+echo "Ingrese el numero que desee : ";
 $n = trim(fgets(STDIN));
+echo "Ingrese otro numero que desee";
+$m = trim(fgets(STDIN));
 $factorial = factoria($n);
-echo " " . $factorial . " ";
+echo " El factorial de " . $n . "es: " . $factorial . " ";
+$arreglosNombre=[3,8,9,142,33];
+
+/** Ejercicio01
+ * 
+ */
+
 function factoria($n)
 {
     $j = 1;
@@ -11,6 +23,7 @@ function factoria($n)
     }
     return $j;
 }
+/**Ejercicio 02 */
 function esPar($n)
 {
     if ($n % 2 == 0) {
@@ -20,14 +33,45 @@ function esPar($n)
     }
     return $esPar;
 }
+/**Ejercicio 03
+ * 
+ */
 
-function pedo($n, $m)
-{
-    $m = trim(fgets(STDIN));
-    if ($n % $m = 0) {
+function resto($n,$m){
+    if (($n % $m) == 0) {
         $divisible = true;
     } else {
         $divisible = false;
     }
     return $divisible;
+}
+/** ejercicio 04 
+ * 
+*/
+function numeroMayorYmenor ($arreglosNombre){
+    for ($i=0; $i <count($arreglosNombre) ; $i++) { 
+        
+    }
+
+
+}
+
+/**ejercicio 05.
+ * 
+ */
+function leerNombres($n){
+for(i=1; i<$n; i++){
+$leerNombre=[];
+$leerNombre=[$i]=trim(fgets(STDIN));
+}
+return $leerNombre;
+}
+/**Ejercicio 06
+ * 
+ */
+/**Ejercicio 07
+ * 
+ */
+function($a,$b,$n,$m){
+
 }
